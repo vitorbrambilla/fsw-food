@@ -4,8 +4,9 @@ import { Restaurant } from "@prisma/client";
 import { notFound, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { searchForRestaurants } from "../_actions/search";
-import Header from "../../_components/header";
+
 import RestaurantItem from "../../_components/restaurant-item";
+import Header from "@/app/_components/header";
 
 const Restaurants = () => {
   const searchParams = useSearchParams();
